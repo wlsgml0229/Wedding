@@ -41,6 +41,13 @@
   },
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
-    "@types/testing-library__jest-dom": "testing-library/jest-dom"
+    "@types/eslint": "^8",
+    "@types/testing-library__jest-dom": "testing-library/jest-dom",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin": "^1.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.1.1"
   }
 }
