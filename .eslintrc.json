@@ -6,6 +6,6 @@
     ],
     "plugins": ["prettier"],
     "rules": {
-        "pprettier/prettier": "error"
+        "prettier/prettier": "error"
     }
 }
