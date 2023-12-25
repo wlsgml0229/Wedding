@@ -1,0 +1,54 @@
+.container {
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ico-heart {
+    width: 60px;
+    height: 60px;
+    animation: pop;
+    animation: heartbeat .6s infinite;
+       
+    .st0 {
+        fill: #FF5050;
+    }
+
+    .st1 {
+        fill: #FFFFFF;
+    }
+
+    .st2 {
+        fill: rgb(211, 78, 98);
+    }
+}
+
+.ico-error {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(0.95);
+    }
+    20% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}

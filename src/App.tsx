@@ -1,31 +1,42 @@
-import React from "react"
-import logo from "./logo.svg"
-import "./App.css"
+import React, { useEffect, useState } from "react"
 
 import classNames from "classnames/bind"
 import styles from "./App.module.scss"
+import { FullScreenMessage } from "./components/shared/FullScreenMessage"
 
 const cx = classNames.bind(styles)
 
 function App() {
-  return (
-    <div className={cx("container")}>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  )
+  const [wedding, setWedding] = useState(null)
+  const [loading, setLooading] = useState(false)
+  const [error, setError] = useState(false)
+
+  useEffect(() => {
+    setLooading(true)
+    fetch("http://localhost:8888/weddinsg")
+      .then((res) => {
+        if (res.ok === false) {
+          throw new Error("청첩장 정보를 불러오는데 실패했습니다.")
+        }
+        return res.json()
+      })
+      .then((data) => {
+        setWedding(data)
+      })
+      .catch((e) => {
+        setError(true)
+      })
+      .finally(() => {
+        setLooading(false)
+      })
+  }, [])
+  if (loading) {
+    return <FullScreenMessage type="loading" />
+  }
+  if (error) {
+    return <FullScreenMessage type="error" />
+  }
+  return <div className={cx("container")}>{JSON.stringify(wedding)}</div>
 }
 
 export default App
