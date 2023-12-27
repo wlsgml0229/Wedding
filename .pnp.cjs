@@ -38,6 +38,7 @@ const RAW_RUNTIME_STATE =
           ["@types/testing-library__jest-dom", "virtual:2aff2f060f2eaa1aead584f0d02a59b8381a7b28d8b6bddf7e4be1c580835b71c3a94b22c2b990284cc5b13977a215325775767c8124c2a2bf5de73f08c081e1#https://github.com/testing-library/jest-dom.git#commit=746c6ca59a7bd10ab0a42a8fecf0001e80eeb647"],\
           ["classnames", "npm:2.3.2"],\
           ["craco-alias", "npm:3.0.1"],\
+          ["date-fns", "npm:3.0.6"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-prettier", "virtual:2aff2f060f2eaa1aead584f0d02a59b8381a7b28d8b6bddf7e4be1c580835b71c3a94b22c2b990284cc5b13977a215325775767c8124c2a2bf5de73f08c081e1#npm:9.1.0"],\
           ["eslint-config-react-app", "virtual:2aff2f060f2eaa1aead584f0d02a59b8381a7b28d8b6bddf7e4be1c580835b71c3a94b22c2b990284cc5b13977a215325775767c8124c2a2bf5de73f08c081e1#npm:7.0.1"],\
@@ -7955,6 +7956,15 @@ const RAW_RUNTIME_STATE =
           ["abab", "npm:2.0.6"],\
           ["whatwg-mimetype", "npm:2.3.0"],\
           ["whatwg-url", "npm:8.7.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["date-fns", [\
+      ["npm:3.0.6", {\
+        "packageLocation": "../../../.yarn/berry/cache/date-fns-npm-3.0.6-5f59bceef3-10c0.zip/node_modules/date-fns/",\
+        "packageDependencies": [\
+          ["date-fns", "npm:3.0.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18591,6 +18601,7 @@ const RAW_RUNTIME_STATE =
           ["@types/testing-library__jest-dom", "virtual:2aff2f060f2eaa1aead584f0d02a59b8381a7b28d8b6bddf7e4be1c580835b71c3a94b22c2b990284cc5b13977a215325775767c8124c2a2bf5de73f08c081e1#https://github.com/testing-library/jest-dom.git#commit=746c6ca59a7bd10ab0a42a8fecf0001e80eeb647"],\
           ["classnames", "npm:2.3.2"],\
           ["craco-alias", "npm:3.0.1"],\
+          ["date-fns", "npm:3.0.6"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-prettier", "virtual:2aff2f060f2eaa1aead584f0d02a59b8381a7b28d8b6bddf7e4be1c580835b71c3a94b22c2b990284cc5b13977a215325775767c8124c2a2bf5de73f08c081e1#npm:9.1.0"],\
           ["eslint-config-react-app", "virtual:2aff2f060f2eaa1aead584f0d02a59b8381a7b28d8b6bddf7e4be1c580835b71c3a94b22c2b990284cc5b13977a215325775767c8124c2a2bf5de73f08c081e1#npm:7.0.1"],\
