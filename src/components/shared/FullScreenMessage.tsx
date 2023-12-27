@@ -259,7 +259,7 @@ function Heart() {
     </svg>
   )
 }
-export function FullScreenMessage({ type }: FullScreenMessageProps) {
+function FullScreenMessage({ type }: FullScreenMessageProps) {
   return (
     <div className={cx("container")}>
       {type === "loading" ? (
@@ -272,3 +272,5 @@ export function FullScreenMessage({ type }: FullScreenMessageProps) {
     </div>
   )
 }
+
+export default FullScreenMessage
