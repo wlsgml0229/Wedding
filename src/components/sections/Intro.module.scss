@@ -1,6 +1,7 @@
+@import "@scss/utils.scss";
+
 .container {
-        text-align: center;
-        line-height: 26px;
+        @include txt-content;
     .wrap-persons {
         font-size: 22px;
         font-weight: bold;
