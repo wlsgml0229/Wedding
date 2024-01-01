@@ -18,6 +18,7 @@ export interface Location {
   lat: number
   lng: number
   address: string
+  name: string
   waytocome: {
     metro: string[]
     bus: string[]
