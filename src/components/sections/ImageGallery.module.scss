@@ -1,4 +1,6 @@
 .wrap-images {
+    border-top: 1px solid lightgray;
+    padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); //3개씩반복
     gap:6px;

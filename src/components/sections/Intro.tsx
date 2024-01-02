@@ -26,7 +26,7 @@ function Intro({
     <Section className={cx("container")}>
       <div className={cx("wrap-persons")}>
         <span>{groomName}</span>
-        <FlowerIcon className={cx("ico-flower")} />
+        <IconFlower className={cx("ico-flower")} />
         <span>{brideName}</span>
       </div>
 
@@ -42,7 +42,7 @@ function Intro({
   )
 }
 
-function FlowerIcon({ className }: { className: string }) {
+function IconFlower({ className }: { className: string }) {
   return (
     <svg
       className={className}
