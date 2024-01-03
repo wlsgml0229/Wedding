@@ -18,7 +18,7 @@ function IconRing({ className }: { className: string }) {
   return (
     <svg
       className={className}
-      enable-background="new 0 0 38.515 38.542"
+      enableBackground="new 0 0 38.515 38.542"
       height="38.542px"
       id="Layer_1"
       version="1.1"

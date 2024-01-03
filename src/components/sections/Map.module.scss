@@ -1,0 +1,46 @@
+.wrap-header {
+    display: flex;
+    flex-direction: column;
+    .txt-title {
+        margin-bottom: 16px;
+    }
+    .txt-subtitle {
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+
+.wrap-map {
+    position: relative;
+
+    .map {   
+        width: 100%;
+        height: 250px;
+    }
+
+    .btn-find-way {
+        font-size: 16px;
+        color: var(--pink);
+        font-weight: bold;
+        border: 2px solid var(--light-pink);
+        padding: 8px 32px;
+        z-index: 2;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        text-decoration: none;
+        border-radius: 32px;
+    }
+}
+
+.wrap-waytocome {
+    margin: 16px 0;
+    line-height: 1.3;
+    .txt-label {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
