@@ -85,7 +85,7 @@ function WayToCome({
       <div>{label}</div>
       <ul>
         {list.map((waytocome) => (
-          <li>{waytocome}</li>
+          <li key={waytocome}>{waytocome}</li>
         ))}
       </ul>
     </div>
