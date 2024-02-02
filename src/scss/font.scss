@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'NanumGomSinCe';
-    src: url(../assets/fonts/NanumGomsince.woff2) format("woff2"),
-        url(../assets/fonts/NanumGomsince.woff) format("woff2"),
-        url(../assets/fonts/NanumGomsince.ttf) format("truetype") // 모두적용 못했다면 ttf로 적용
+    src: url(../assets/fonts/subset-SUITEVariable-Regular.woff2) format("woff2"),
+    url(../assets/fonts/subset-SUITEVariable-Regular.woff) format("woff"),
+        url(../assets/fonts/subset-SUITEVariable-Regular.ttf) format("truetype"); // 모두적용 못했다면 ttf로 적용
+    font-display: fallback;
 }
