@@ -12,7 +12,7 @@ import Modal from "@shared/Modal"
 type ModalProps = ComponentProps<typeof Modal>
 type ModalOptions = Omit<ModalProps, "open">
 interface ModalContextValue {
-  open: (options: ModalProps) => void
+  open: (options: ModalOptions) => void
   close: () => void
 }
 
@@ -50,7 +50,7 @@ function ModalContext({ children }: { children: React.ReactNode }) {
 
 export function useModalContext() {
   const value = useContext(Context)
-  if (value === null) {
+  if (!value) {
     throw new Error("ModalContext 안에서 사용해주세요")
   }
   return value

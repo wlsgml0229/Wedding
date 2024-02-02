@@ -57,7 +57,6 @@
       "account": {
         "bankName": "농협",
         "accountNumber": "352-0952-4669-11"
-       
       },
       "phoneNumber": "01022345124",
       "parents": [
@@ -67,7 +66,6 @@
             "bankName": "카카오뱅크",
             "accountNumber": "3333-1112-11932"
           },
-         
           "phoneNumber": "01024333423"
         },
         {
@@ -98,6 +96,6 @@
       "/assets/images/wedding_11",
       "/assets/images/wedding_12"
     ],
-    "attendCount": 0
+    "attendCount": 22
   }
 }

@@ -30,9 +30,7 @@ function Modal({
       <div className={cx("wrap-modal")}>
         <div className={cx("wrap-body")}>
           <div className={cx("wrap-content")}>
-            {title === null ? null : (
-              <div className={cx("txt-title")}>{title}</div>
-            )}
+            {title && <div className={cx("txt-title")}>{title}</div>}
             {body}
           </div>
           <div className={cx("wrap-buttons")}>

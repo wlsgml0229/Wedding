@@ -16,6 +16,9 @@
          ],
            "@scss/*":[
             "src/scss/*"
+         ],
+         "@contexts/*": [
+            "src/contexts/*"
          ]
       }
    }
