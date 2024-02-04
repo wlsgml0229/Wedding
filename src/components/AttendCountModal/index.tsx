@@ -1,16 +1,19 @@
 import { Wedding } from "@/models/wedding"
 import { useModalContext } from "@contexts/ModalContext"
-import { useEffect, useRef } from "react"
+import { useCallback, useEffect, useRef } from "react"
 function AttendCountModal({ wedding }: { wedding: Wedding }) {
-  const { open, close } = useModalContext()
+  const { open, close } = useModalContext() // 캐시된함수
   const haveSeenModal = localStorage.getItem("@have-seen-modal")
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     localStorage.setItem("@have-seen-modal", "true")
     close()
-  }
+  }, [close])
+
   const $input = useRef<HTMLInputElement>(null)
+
   useEffect(() => {
+    console.log("hi")
     if (haveSeenModal === "true") {
       return
     }
@@ -35,7 +38,6 @@ function AttendCountModal({ wedding }: { wedding: Wedding }) {
           return
         }
         //서버 데이터를 업데이트
-        console.log($input.current.value)
         fetch("http://localhost:8888/wedding", {
           method: "PUT",
           body: JSON.stringify({
@@ -49,7 +51,7 @@ function AttendCountModal({ wedding }: { wedding: Wedding }) {
         closeModal()
       },
     })
-  }, []) //eslint-disable-line
+  }, [open, close, wedding, haveSeenModal, closeModal])
   return null
 }
 
